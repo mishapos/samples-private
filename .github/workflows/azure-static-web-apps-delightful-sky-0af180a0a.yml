@@ -18,6 +18,8 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
+      - name: My first step
+        uses: docker://mishapos/static-web-apps-deploy:latest
       - name: Build And Deploy
         id: builddeploy
         uses: mishapos/static-web-apps-deploy@v1.3
